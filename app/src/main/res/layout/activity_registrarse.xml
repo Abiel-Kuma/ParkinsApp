@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registrarse"
+    android:orientation="vertical"
+    android:background="@color/black">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1F618D "
+        android:fontFamily="@font/lastingsketch"
+        android:gravity="center"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:text="Ingrese sus datos"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        android:textStyle="bold|italic" />
+
+
+    <EditText
+        android:id="@+id/txtNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:hint="Name"
+        android:textColorHint="#839192"
+        android:textColor="@color/white"
+        android:fontFamily="@font/lastingsketch"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:textSize="32dp"/>
+
+    <EditText
+        android:id="@+id/txtCedula"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:hint="Cedula"
+        android:textColorHint="#839192"
+        android:textColor="@color/white"
+        android:fontFamily="@font/lastingsketch"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:textSize="32dp"/>
+
+    <EditText
+        android:id="@+id/txtEdad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Edad"
+        android:textColorHint="#839192"
+        android:textColor="@color/white"
+        android:fontFamily="@font/lastingsketch"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="32dp"/>
+
+
+    <EditText
+        android:id="@+id/txtUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:hint="User"
+        android:textColorHint="#839192"
+        android:textColor="@color/white"
+        android:fontFamily="@font/lastingsketch"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:textSize="32dp"/>
+
+    <EditText
+        android:id="@+id/txtContrasena"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:textColorHint="#839192"
+        android:textColor="@color/white"
+        android:fontFamily="@font/lastingsketch"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="32dp"/>
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rbgTipoRegistro"
+        android:orientation="vertical"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        >
+
+        <RadioButton
+            android:id="@+id/rbtAdministrador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Admin"
+            android:textColor="@color/white"
+            android:fontFamily="@font/lastingsketch"
+            android:textSize="32dp" />
+
+        <RadioButton
+            android:id="@+id/rbtCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="32dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/lastingsketch"
+            android:text="Client"/>
+    </RadioGroup>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="32sp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_rounded"
+        android:fontFamily="@font/lastingsketch"
+        android:textStyle="bold|italic"
+        android:textColor="@color/black"
+        android:text="Register"
+        android:textSize="28dp"
+        android:onClick="RegistrarPersona"/>
+
+</LinearLayout>

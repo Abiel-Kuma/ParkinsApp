@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:fontFamily="@font/bitcheese"
+        android:gravity="center"
+        android:text="ParKins"
+        android:textColor="#2ECDFB"
+        android:textSize="50sp"
+        android:textStyle="bold|italic"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bitcheese"
+        android:gravity="center"
+        android:text="+18"
+        android:textColor="#FF01FE"
+        android:textSize="50sp"
+        android:textStyle="bold"
+
+        />
+
+
+    <EditText
+        android:id="@+id/txtUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32sp"
+        android:layout_marginRight="32sp"
+        android:fontFamily="@font/lastingsketch"
+        android:hint="User"
+        android:textColor="@color/white"
+        android:textColorHint="#839192"
+        android:textSize="30sp" />
+
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32sp"
+        android:layout_marginRight="32sp"
+        android:fontFamily="@font/lastingsketch"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:textColorHint="#839192"
+        android:textSize="30sp" />
+
+    <RadioGroup
+        android:id="@+id/rbgLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rbtAdministrador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lastingsketch"
+            android:text="Admin"
+            android:textColor="@color/white"
+            android:textSize="32dp" />
+
+        <RadioButton
+            android:id="@+id/rbtCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lastingsketch"
+            android:text="User"
+            android:textColor="@color/white"
+            android:textSize="32dp" />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="32sp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_rounded"
+        android:fontFamily="@font/lastingsketch"
+        android:onClick="ValidarUser"
+        android:text="Login"
+        android:textSize="28dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="32sp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_rounded"
+        android:fontFamily="@font/lastingsketch"
+        android:onClick="Register"
+        android:text="Register"
+        android:textSize="28dp" />
+
+
+</LinearLayout>
